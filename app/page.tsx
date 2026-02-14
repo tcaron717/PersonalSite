@@ -137,8 +137,9 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            Software engineering manager passionate about building high-performing teams and shipping products that matter. 
+            I love connecting great people with meaningful problems.
+          
           </p>
         </div>
       </motion.section>

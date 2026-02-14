@@ -49,11 +49,11 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Taylor Corporation',
+    title: 'Software Engineering Manager',
+    start: '2022',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: '',
     id: 'work1',
   },
   {
@@ -106,20 +106,20 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/tcaron717',
   },
   {
     label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: '',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/todd-caron-632516128',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: '',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'toddcaron2@gmail.com'
