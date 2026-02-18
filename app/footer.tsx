@@ -4,6 +4,8 @@ import { TextLoop } from '@/components/ui/text-loop'
 import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css'; // Import the CSS
 
 const THEMES_OPTIONS = [
   {
@@ -51,15 +53,17 @@ function ThemeSwitch() {
     >
       {THEMES_OPTIONS.map((theme) => {
         return (
-          <button
+          <><button
             key={theme.id}
             className="inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
             type="button"
             aria-label={`Switch to ${theme.label} theme`}
             data-id={theme.id}
+            data-tooltip-id="theme-switcher-tooltip"
+            data-tooltip-content={theme.label}
           >
             {theme.icon}
-          </button>
+          </button><Tooltip id="theme-switcher-tooltip" /></>
         )
       })}
     </AnimatedBackground>

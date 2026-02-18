@@ -47,10 +47,13 @@ const TRANSITION_SECTION = {
   duration: 0.3,
 }
 
+/*
 type ProjectVideoProps = {
   src: string
 }
+*/
 
+/*
 function ProjectVideo({ src }: ProjectVideoProps) {
   return (
     <MorphingDialog
@@ -96,6 +99,7 @@ function ProjectVideo({ src }: ProjectVideoProps) {
     </MorphingDialog>
   )
 }
+*/
 
 function MagneticSocialLink({
   children,
@@ -130,7 +134,6 @@ function MagneticSocialLink({
     </Magnetic>
   )
 }
-
 export default function Personal() {
   return (
     <motion.main
@@ -161,7 +164,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                {/* <ProjectVideo src={project.video} /> */}
               </div>
               <div className="px-1">
                 <a
