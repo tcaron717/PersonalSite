@@ -13,6 +13,7 @@ type WorkExperience = {
   end: string
   link: string
   id: string
+  content: string[]
 }
 
 type BlogPost = {
@@ -55,22 +56,32 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     link: '',
     id: 'work1',
+    content: [
+      '•Directed globally distributed full-stack teams across 10+ applications generating $100M+ annual revenue.',
+      '• Spearheaded development of PCI-compliant e-commerce application stacks with integrated payment processing, ensuring secure transactions and adherence to industry standards.',
+      '• Standardized Agile Scrum across teams; reduced workflow friction by 50% and decreased release bugs by 25% through CI/CD improvements and developer training.',
+      '• Led greenfield development of a scalable Federation API platform to unify 3rd party integrations—minimizing redundant development efforts across business units.',
+      '• Modernized legacy monolith applications into microservices within on-prem and Azure cloud environments, improving vendor/client onboarding speed and reliability.',
+      '• Designed and led the full-stack consolidation of three legacy web applications into a single modern SPA, streamlining internal sales workflows and significantly improving end-user experience to support a more efficient go-to-market strategy'
+    ]
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
+    company: 'Taylor Corporation',
+    title: 'Technical Scrum Master',
     start: '2022',
     end: '2024',
-    link: 'https://ibelick.com',
+    link: '',
     id: 'work2',
+    content: []
   },
   {
-    company: 'Freelance',
+    company: '',
     title: 'Front-end Developer',
     start: '2017',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'h',
     id: 'work3',
+    content: []
   },
 ]
 
