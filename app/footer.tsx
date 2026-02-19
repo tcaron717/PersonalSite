@@ -25,7 +25,7 @@ const THEMES_OPTIONS = [
   },
 ]
 
-function ThemeSwitch() {
+export function ThemeSwitch() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -53,7 +53,7 @@ function ThemeSwitch() {
     >
       {THEMES_OPTIONS.map((theme) => {
         return (
-          <><button
+          <button
             key={theme.id}
             className="inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
             type="button"
@@ -63,7 +63,8 @@ function ThemeSwitch() {
             data-tooltip-content={theme.label}
           >
             {theme.icon}
-          </button><Tooltip id="theme-switcher-tooltip" /></>
+          </button>
+
         )
       })}
     </AnimatedBackground>
@@ -80,7 +81,7 @@ export function Footer() {
             <span>Built with Motion-Primitives.</span>
           </TextLoop>
         </a>
-        <div className="text-xs text-zinc-400">
+        <div className="text-xs text-zinc-400 ">
           <ThemeSwitch />
         </div>
       </div>
