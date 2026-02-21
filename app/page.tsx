@@ -148,13 +148,16 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Software engineering manager passionate about building high-performing teams and shipping products that matter. 
+            As a Software Engineering Manager at Taylor Corporation, I'm passionate about building high-performing teams and shipping products that matter. 
             I love connecting great people with meaningful problems.
-          
+          </p>
+          <p className="text-zinc-600 dark:text-zinc-400 mt-4">
+            Currently building highly integrated E-commerce solutions and modernizing legacy monoliths in on-prem and Azure cloud environments. In the past, I've led the development of PCI-compliant e-commerce application stacks, standardized Agile Scrum across teams, and driven enterprise-wide rollouts of Azure DevOps and CI/CD improvements.
           </p>
         </div>
       </motion.section>
-
+        
+      {PROJECTS.length > 0 && (
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -183,6 +186,7 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
+      )}
 
       <motion.section
         variants={VARIANTS_SECTION}
@@ -191,7 +195,7 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
         <AccordionIcons />
       </motion.section>
-
+{BLOG_POSTS.length > 0 && (
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -227,7 +231,7 @@ export default function Personal() {
           </AnimatedBackground>
         </div>
       </motion.section>
-
+      )}
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -267,7 +271,7 @@ export function AccordionIcons() {
     >
     {WORK_EXPERIENCE.map((job, index) => (
 
-      <><AccordionItem key={job.id} value={job.id} className={`relative h-full w-full rounded-[30px] bg-white p-4 dark:bg-zinc-950 py-2 ${index < WORK_EXPERIENCE.length - 1 ? 'border-b-2 border-zinc-200 dark:border-zinc-700' : ''}`}>
+      <><AccordionItem key={job.id} value={job.id} className={`relative h-full w-full rounded-[30px] bg-white p-4 dark:bg-zinc-950 py-2 ${index < WORK_EXPERIENCE.length ? 'border-2  mb-2 border-zinc-200 dark:border-zinc-700' : ''}`}>
         <AccordionTrigger className='w-full text-left text-zinc-950 dark:text-zinc-50 group-data-[expanded=true]:bg-zinc-100 dark:group-data-[expanded=true]:bg-zinc-800/50 rounded-lg px-3 py-2'>
           <div className='flex items-center justify-between'>
             <div className="relative flex w-full flex-row justify-between">

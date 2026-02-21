@@ -4,7 +4,8 @@ import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
-import {ThemeSwitch} from './footer'
+import { ThemeSwitch } from './footer'
+
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -13,15 +14,15 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://toddcaron.com'),
   alternates: {
     canonical: '/'
   },
   title: {
     default: 'Todd Caron - Personal Website',
-    template: '%s | Nim'
+    template: '%s | Todd Caron - Personal Website',
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  'Todd Caron is a software engineering manager passionate about building high-performing teams and shipping products that matter.',
 };
 
 const geist = Geist({
@@ -53,7 +54,7 @@ export default function RootLayout({
           <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
             <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
               <div className='py-2 justify-end flex'>
-                <ThemeSwitch />
+               <ThemeSwitch/>
               </div>
               <Header />
               {children}

@@ -85,6 +85,7 @@ export function Footer() {
           <ThemeSwitch />
         </div>
       </div>
+      <Tooltip id="theme-switcher-tooltip" />
     </footer>
   )
 }
