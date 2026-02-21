@@ -19,6 +19,14 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/motion-primitives/accordion';
+import { ChevronUp } from 'lucide-react'; 
+import { a } from 'motion/react-client' 
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -39,10 +47,13 @@ const TRANSITION_SECTION = {
   duration: 0.3,
 }
 
+/*
 type ProjectVideoProps = {
   src: string
 }
+*/
 
+/*
 function ProjectVideo({ src }: ProjectVideoProps) {
   return (
     <MorphingDialog
@@ -88,6 +99,7 @@ function ProjectVideo({ src }: ProjectVideoProps) {
     </MorphingDialog>
   )
 }
+*/
 
 function MagneticSocialLink({
   children,
@@ -122,7 +134,6 @@ function MagneticSocialLink({
     </Magnetic>
   )
 }
-
 export default function Personal() {
   return (
     <motion.main
@@ -137,13 +148,16 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Software engineering manager passionate about building high-performing teams and shipping products that matter. 
+            As a Software Engineering Manager at Taylor Corporation, I'm passionate about building high-performing teams and shipping products that matter. 
             I love connecting great people with meaningful problems.
-          
+          </p>
+          <p className="text-zinc-600 dark:text-zinc-400 mt-4">
+            Currently building highly integrated E-commerce solutions and modernizing legacy monoliths in on-prem and Azure cloud environments. In the past, I've led the development of PCI-compliant e-commerce application stacks, standardized Agile Scrum across teams, and driven enterprise-wide rollouts of Azure DevOps and CI/CD improvements.
           </p>
         </div>
       </motion.section>
-
+        
+      {PROJECTS.length > 0 && (
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -153,7 +167,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                {/* <ProjectVideo src={project.video} /> */}
               </div>
               <div className="px-1">
                 <a
@@ -172,45 +186,16 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
+      )}
 
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
-        <div className="flex flex-col space-y-2">
-          {WORK_EXPERIENCE.map((job) => (
-            <a
-              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
-              href={job.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={job.id}
-            >
-              <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
-                size={64}
-              />
-              <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
-                <div className="relative flex w-full flex-row justify-between">
-                  <div>
-                    <h4 className="font-normal dark:text-zinc-100">
-                      {job.title}
-                    </h4>
-                    <p className="text-zinc-500 dark:text-zinc-400">
-                      {job.company}
-                    </p>
-                  </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
-                    {job.start} - {job.end}
-                  </p>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
+        <AccordionIcons />
       </motion.section>
-
+{BLOG_POSTS.length > 0 && (
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -246,7 +231,7 @@ export default function Personal() {
           </AnimatedBackground>
         </div>
       </motion.section>
-
+      )}
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -266,6 +251,56 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
-    </motion.main>
+
+        <motion.section
+          variants={VARIANTS_SECTION}
+          transition={TRANSITION_SECTION}
+        >
+          
+        </motion.section>
+      </motion.main>
   )
+}
+
+export function AccordionIcons() {
+  return (
+    
+    <Accordion
+      className='flex w-full flex-col'
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
+    >
+    {WORK_EXPERIENCE.map((job, index) => (
+
+      <><AccordionItem key={job.id} value={job.id} className={`relative h-full w-full rounded-[30px] bg-white p-4 dark:bg-zinc-950 py-2 ${index < WORK_EXPERIENCE.length ? 'border-2  mb-2 border-zinc-200 dark:border-zinc-700' : ''}`}>
+        <AccordionTrigger className='w-full text-left text-zinc-950 dark:text-zinc-50 group-data-[expanded=true]:bg-zinc-100 dark:group-data-[expanded=true]:bg-zinc-800/50 rounded-lg px-3 py-2'>
+          <div className='flex items-center justify-between'>
+            <div className="relative flex w-full flex-row justify-between">
+              <div>
+                <h4 className="font-normal dark:text-zinc-100">
+                  {job.title}
+                </h4>
+                <p className="text-zinc-500 dark:text-zinc-400">
+                  {job.company}
+                </p>
+              </div>
+              <p className="text-zinc-600 dark:text-zinc-400">
+                {job.start} - {job.end}
+              </p>
+            </div>
+            <ChevronUp className='h-4 w-4 text-zinc-950 transition-transform duration-200 group-data-expanded:-rotate-180 dark:text-zinc-50' />
+          </div>
+        </AccordionTrigger>
+        <AccordionContent>
+          {job.content.map((line, index) => (
+            <p key={index} className='text-zinc-500 dark:text-zinc-400 mb-2'>
+              {line}
+            </p>
+          ))}
+        </AccordionContent>
+      
+        </AccordionItem></>
+          ))}
+      
+    </Accordion>
+  );
 }
