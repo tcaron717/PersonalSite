@@ -4,14 +4,7 @@ import createMDX from '@next/mdx';
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-  turbopack: {
-  rules: {
-  ".svg": {
-  loaders: ["@svgr/webpack"],
-  as: "*.js",
-  },
-  },
-  },
+  turbopack: {},
   };
 
 const withMDX = createMDX({
