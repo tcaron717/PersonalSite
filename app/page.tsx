@@ -2,6 +2,7 @@
 import { motion } from 'motion/react'
 import { XIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
+import Image from 'next/image'
 import { Magnetic } from '@/components/ui/magnetic'
 import {
   MorphingDialog,
@@ -145,17 +146,33 @@ export default function Personal() {
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
-      >
-        <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400">
-            As a Software Engineering Manager at Taylor Corporation, I'm passionate about building high-performing teams and shipping products that matter. 
-            I love connecting great people with meaningful problems.
-          </p>
-          <p className="text-zinc-600 dark:text-zinc-400 mt-4">
-            Currently building highly integrated E-commerce solutions and modernizing legacy monoliths in on-prem and Azure cloud environments. In the past, I've led the development of PCI-compliant e-commerce application stacks, standardized Agile Scrum across teams, and driven enterprise-wide rollouts of Azure DevOps and CI/CD improvements.
-          </p>
+>
+        <div className="flex flex-col gap-8 md:flex-row md:items-start">
+          <div className="flex-1">
+            <p className="text-zinc-600 dark:text-zinc-400">
+              As a Software Engineering Manager at Taylor Corporation, I'm passionate about building high-performing teams and shipping products that matter.
+              I love connecting great people with meaningful problems.
+            </p>
+            <p className="mt-4 text-zinc-600 dark:text-zinc-400">
+              Currently navigating the evolving landscape of AI-assisted development, I'm focused on leveraging tools like Copilot and Claude to enhance developer productivity and drive innovation. I remain hands-on, building full-stack features and APIs using .NET and React with AI-assisted tools, while also mentoring my teams on best practices in this exciting new frontier.
+            </p>
+            <p className="mt-4 text-zinc-600 dark:text-zinc-400">
+              I talk more about this in my recently published book "Leading in the Age of AI Enginnering: Guide for Non-Technical Leaders", available on <a href="http://books.apple.com/us/book/id6761745467" className="underline dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300">Apple Books</a> - where I hope to share my experiences and insights on how to lead effectively in this rapidly changing landscape, and help other leaders navigate the challenges and opportunities that AI presents for software development teams.
+            </p>
+          </div>
+
+          <div className="shrink-0">
+            <Image
+              src="/bookCover.jpg"
+              alt="Todd Caron"
+              width={280}
+              height={280}
+              className="rounded-2xl object-cover"
+            />
+          </div>
         </div>
       </motion.section>
+
         
       {PROJECTS.length > 0 && (
       <motion.section

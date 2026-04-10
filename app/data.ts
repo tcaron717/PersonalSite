@@ -41,12 +41,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: '',
     id: 'work1',
     content: [
-      '•Directed globally distributed full-stack teams across 10+ applications generating $100M+ annual revenue.',
-      '• Spearheaded development of PCI-compliant e-commerce application stacks with integrated payment processing, ensuring secure transactions and adherence to industry standards.',
-      '• Standardized Agile Scrum across teams; reduced workflow friction by 50% and decreased release bugs by 25% through CI/CD improvements and developer training.',
-      '• Led greenfield development of a scalable Federation API platform to unify 3rd party integrations—minimizing redundant development efforts across business units.',
-      '• Modernized legacy monolith applications into microservices within on-prem and Azure cloud environments, improving vendor/client onboarding speed and reliability.',
-      '• Designed and led the full-stack consolidation of three legacy web applications into a single modern SPA, streamlining internal sales workflows and significantly improving end-user experience to support a more efficient go-to-market strategy'
+      '• Led distributed teams supporting 10+ applications generating $100M+ annually',
+      '• Introduced AI-assisted development practices (Copilot, Claude), improving developer productivity by ~20–30% incoding and debugging workflows and reducing iteration time',
+      '• Remained hands-on, building full-stack features and APIs using .NET and React with AI-assisted tools',
+      '• Architected and delivered a federated API platform for third-party integrations',
+      '• Mentored developers, architects, and Scrum Masters on AI-assisted development practices',
+      '• Modernized legacy systems into microservices in Azure environments'
     ]
   },
   {
@@ -57,9 +57,9 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: '',
     id: 'work2',
     content: [
-      '• Transitioned 3+ hybrid development teams to full Agile Scrum, establishing velocity metrics and backlog health.',
-      '• Led enterprise-wide rollout of Azure DevOps including governance documentation, training, and process definition.',
-      '• Drove delivery of new features on high-revenue applications ($30M+) by owning Scrum ceremonies, stakeholder alignment, and backlog refinement.'
+      '• Led Agile transformation and established delivery metrics',
+      '• Implemented Azure DevOps across teams',
+      '• Improved delivery predictability for high-revenue applications'
     ]
   },
   {
@@ -70,9 +70,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'h',
     id: 'work4',
     content: [
-      '• Managed $2M+ IT/manufacturing initiatives with cross-functional teams of 15+, leading full lifecycle delivery.',
-      '• Developed semi-automated estimating system (ERS), reducing turnaround time by 20% and increasing profit margins by 15%.',
-      '• Delivered cost estimation audit and process overhaul resulting in up to 5% additional profitability.'
+      '• Managed $2M+ initiatives with cross-functional teams',
+      '• Developed systems improving turnaround time and profitability',
     ]
   },
   {
@@ -83,8 +82,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'h',
     id: 'work5',
     content: [
-      '• Led cross-departmental IT and HR projects valued at $2M+, with teams of 20+ staff.',
-      '• Designed and developed an inventory/fulfillment system into ERP—achieved 40% productivity boost.'
+      '• Led ERP and system development projects',
+      '• Built systems improving operational productivity'
     ]
   },
   {
@@ -112,16 +111,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: 'https://github.com/tcaron717',
   },
   {
-    label: 'Twitter',
-    link: '',
-  },
-  {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/todd-caron-632516128',
   },
   {
-    label: 'Instagram',
-    link: '',
+    label: 'Apple Books',
+    link: 'http://books.apple.com/us/book/id6761745467',
   },
 ]
 
