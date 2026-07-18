@@ -41,62 +41,62 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: '',
     id: 'work1',
     content: [
-      '• Led distributed teams supporting 10+ applications generating $100M+ annually',
-      '• Introduced AI-assisted development practices (Copilot, Claude), improving developer productivity by ~20–30% incoding and debugging workflows and reducing iteration time',
-      '• Remained hands-on, building full-stack features and APIs using .NET and React with AI-assisted tools',
-      '• Architected and delivered a federated API platform for third-party integrations',
-      '• Mentored developers, architects, and Scrum Masters on AI-assisted development practices',
-      '• Modernized legacy systems into microservices in Azure environments'
+      '• Lead 7 direct reports and 15 offshore developers supporting 10+ business-critical applications generating more than $100M in annual revenue.',
+      '• Developed three engineers into technical leads or architects through targeted coaching and expanded ownership, increasing team autonomy and strengthening succession coverage.',
+      '• Led the consolidation of three legacy .NET and Adobe ColdFusion systems into a unified .NET and Vue.js platform using a hybrid microservices architecture, eliminating duplicated capabilities and reducing operating cost by 45%',
+      '• Architected and delivered a federated API platform using .NET and Azure API Management, standardizing secure third-party access and reducing new partner-integration delivery from 8 weeks to 2 weeks.',
+      '• Standardized Azure Pipelines, code-review gates, and release practices across distributed teams, reducing production defects by 25% and improving deployment frequency',
+      '• Introduced structured AI-assisted development workflows that improved coding and debugging productivity by an estimated 30–40%, based on developer feedback, pilot comparisons, and observed completion times.'
     ]
   },
   {
     company: 'Taylor Corporation',
-    title: 'Technical Scrum Master',
+    title: 'Lead Software Developer',
     start: '2022',
     end: '2024',
     link: '',
     id: 'work2',
     content: [
-      '• Led Agile transformation and established delivery metrics',
-      '• Implemented Azure DevOps across teams',
-      '• Improved delivery predictability for high-revenue applications'
+      '• Designed .NET enterprise services processing 15 million transactions per day across six business units.',
+      '• Migrated 9 WCF and SOAP services to RESTful .NET APIs, establishing reusable integration patterns that became the foundation for the organization’s broader microservice adoption.',
+      '• Improved reliability of a revenue-critical direct-mail platform by resolving systemic production issues and reducing recurring defects by 20%.',
+      '• Built reusable .NET services and shared components that reduced duplicated logic and standardized development across multiple applications and development teams.'
     ]
   },
   {
     company: 'Edison Retail Solutions',
-    title: 'IT Project Manager II',
+    title: 'Software Developer II',
     start: '2018',
     end: '2019',
     link: 'h',
     id: 'work4',
     content: [
-      '• Managed $2M+ initiatives with cross-functional teams',
-      '• Developed systems improving turnaround time and profitability',
+      '• Built a C#/.NET inventory-forecasting application integrated with the company’s ERP system, replacing manual planning and reducing forecast preparation time from days to minutes.',
+      '• Owned ERP integration and inventory-tracking functionality for a C#/.NET forecasting platform delivered by a three-developer team.',
+      '• Coordinated engineering delivery for cross-functional initiatives valued at more than $2M, resolving dependencies and maintaining milestone commitments.'
     ]
   },
   {
     company: 'Retail Printing Group',
-    title: 'IT Project Manager',
+    title: 'Software Developer I',
     start: '2016',
     end: '2018',
     link: 'h',
     id: 'work5',
     content: [
-      '• Led ERP and system development projects',
-      '• Built systems improving operational productivity'
+      '• Independently delivered a C#/.NET and SQL quoting platform from requirements through production, automating a 12-step manual process and reducing quote turnaround time by 25%.',
+      '• Integrated the quoting platform with existing ERP systems and automated previously manual workflows, improving quote-processing speed and employee productivity.'
     ]
   },
   {
     company: 'International Kids Campus',
-    title: 'Manager of Native English Curriculum',
+    title: 'English Administrator',
     start: '2019',
     end: '2021',
     link: 'h',
     id: 'work6',
     content: [
-      '• Built and delivered an original 52-week ESL curriculum, increasing student acquisition and retention by 10% and 15%, respectively.',
-      '• Spearheaded cross-cultural curriculum design projects, collaborating with international teams of 10+ educators.',
-      '• Led marketing collaboration for seasonal programs, growing enrollment by 20% within one year.'
+      '• Completed a planned career intermission in Seoul, developing cross-cultural communication and operational leadership experience.'
     ]
   },
 ]
