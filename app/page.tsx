@@ -154,7 +154,7 @@ export default function Personal() {
               I love connecting great people with meaningful problems.
             </p>
             <p className="mt-4 text-zinc-600 dark:text-zinc-400">
-              Currently navigating the evolving landscape of AI-assisted development, I'm focused on leveraging tools like Copilot and Claude to enhance developer productivity and drive innovation. I remain hands-on, building full-stack features and APIs using .NET and React with AI-assisted tools, while also mentoring my teams on best practices in this exciting new frontier.
+              Currently navigating the evolving landscape of AI-assisted development, I'm focused on leveraging tools like Copilot and Claude to enhance developer productivity and drive innovation. I remain hands-on, building full-stack features and APIs using .NET and Vue.JS while also mentoring my teams on best practices in this exciting new frontier.
             </p>
             <p className="mt-4 text-zinc-600 dark:text-zinc-400">
               I talk more about this in my recently published book "Leading in the Age of AI Enginnering: Guide for Non-Technical Leaders", available on <a href="http://books.apple.com/us/book/id6761745467" className="underline dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300">Apple Books</a> - where I hope to share my experiences and insights on how to lead effectively in this rapidly changing landscape, and help other leaders navigate the challenges and opportunities that AI presents for software development teams.
